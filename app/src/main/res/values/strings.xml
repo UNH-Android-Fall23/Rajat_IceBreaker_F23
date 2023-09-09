@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Rajat_IceBreaker_F23</string>
+    <string name="sample_text">setting text via binding ... Binding maybe cool</string>
 </resources>

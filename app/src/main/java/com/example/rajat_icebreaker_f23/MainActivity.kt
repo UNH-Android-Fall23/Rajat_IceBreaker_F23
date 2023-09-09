@@ -9,7 +9,7 @@ import com.example.rajat_icebreaker_f23.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     //private lateinit var textView: TextView
     private lateinit var binding : ActivityMainBinding
-
+   // private var sampleText: String = getString(R.string.sample_text)
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView((binding.root))
-        binding.welcomeText.text="setting text via binding ... Binding maybe cool"
+        binding.welcomeText.text= "Crashes on using string from strings.xml"
     }
 }
 
