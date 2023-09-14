@@ -43,7 +43,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Header1"
         android:textAlignment="center"
-
         />
 
+    <EditText
+        android:id="@+id/inputLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="13"
+        android:hint="Last Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputFirstName"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/inputPrefName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="13"
+        android:hint="Preffered Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputLastName"
+        android:textAlignment="center"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
