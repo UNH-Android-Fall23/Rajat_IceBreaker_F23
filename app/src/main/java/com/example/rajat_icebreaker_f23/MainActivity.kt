@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView((binding.root))
-        binding.welcomeText.text= "Crashes on using string from strings.xml"
+        binding.Header0.text= "IceBreaker"
     }
 }
 
