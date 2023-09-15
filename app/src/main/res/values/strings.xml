@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Rajat_IceBreaker_F23</string>
     <string name="sample_text">setting text via binding ... Binding maybe cool</string>
+    <string name="button_name">Click Me For Random Questions</string>
+    <string name="header">IceBreaker</string>
+    <string name="question">What is your fav flavour of ice cream?</string>
+    <string name="subHeader">Built With Android</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="pname">Preffered Name</string>
 </resources>
