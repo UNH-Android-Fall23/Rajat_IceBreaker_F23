@@ -8,4 +8,5 @@
     <string name="fname">First Name</string>
     <string name="lname">Last Name</string>
     <string name="pname">Preffered Name</string>
+    <string name="tag">IceBreakerAndroidF23Tag</string>
 </resources>

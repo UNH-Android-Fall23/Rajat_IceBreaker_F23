@@ -3,6 +3,7 @@ package com.example.rajat_icebreaker_f23
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import com.example.rajat_icebreaker_f23.databinding.ActivityMainBinding
 
@@ -10,18 +11,32 @@ class MainActivity : AppCompatActivity() {
     //private lateinit var textView: TextView
     private lateinit var binding : ActivityMainBinding
     //private var sampleText: String = getString(R.string.sample_text)
+    private val TAG= "IceBreakerAndroidF23Tag"
+
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d(TAG,"Okayyyy")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         //textView=findViewById(R.id.welcomeText)
         //textView.setText("Testing Variable Overload with Hardcoded string")
-
-
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView((binding.root))
-        binding.Header0.text= "IceBreaker"
+        //binding.Header0.text= "IceBreaker"
+
+        binding.buttonGetQuestion.setOnClickListener {
+            Log.d(TAG,"Button pressed")
+        }
+
+
+
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
     }
 }
 
