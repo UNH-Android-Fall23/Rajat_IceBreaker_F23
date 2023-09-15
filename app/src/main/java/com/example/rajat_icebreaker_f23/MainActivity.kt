@@ -26,11 +26,22 @@ class MainActivity : AppCompatActivity() {
         setContentView((binding.root))
         //binding.Header0.text= "IceBreaker"
 
-        binding.buttonGetQuestion.setOnClickListener {
+        binding.buttonGetQuestion.setOnClickListener {// fetching questions on getquestions button click
             Log.d(TAG,"Button pressed")
+            getQuesFromFirebase()
         }
 
+        binding.buttonSubmit.setOnClickListener { //container for actions on submit click
+            Log.d(TAG,"Submit button pressed")
+            //vars for input fields binded
+            val firstName=binding.inputFirstName
+            val lastName=binding.inputLastName
+            val prefName=binding.inputPrefName
+            val answer=binding.textAnswer
 
+            Log.d(TAG,"Info gathered is ${firstName.text} ,  ${lastName.text},  ${prefName.text},  ${answer.text}")
+
+        }
 
 
     }
@@ -38,5 +49,14 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
     }
+
+    //function to fetch questions from firebase
+    private fun getQuesFromFirebase(){
+        Log.d(TAG,"Fetching questions from DB.")
+
+    }
+
+
+
 }
 
