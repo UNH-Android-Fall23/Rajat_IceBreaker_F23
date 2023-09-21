@@ -97,3 +97,8 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+#JSON
+.json
+*.json
+google-services.json
